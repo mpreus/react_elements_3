@@ -1,13 +1,43 @@
 html {
   	font-size: 20px;
   	font-family: sans-serif;
-  	color: #333;
+  	color: #222;
+}
+
+body {
+    background-image: url("../img/3516.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#root {
+    background-color: rgba(255, 255, 255, .7);
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: 'Open Sans', sans-serif;
+    margin: 0 auto;
+    padding: 10px;
+    width: 560px;
+}
+
+h1, h2, h3, h4, p {
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 8px;
+    text-transform: uppercase;
+}
+
+p {
+    margin-top: 0;
 }
 
 li {
-	line-height: 160%;
-	padding: 20px 10px;
-	cursor: pointer;
+	  cursor: pointer;
+    line-height: 120%;
+    margin-right: 40px;
+	  padding: 20px 10px;
 }
 
 li:nth-child(even) {
@@ -18,10 +48,10 @@ li:nth-child(odd) {
 }
 
 .enabled {
-  	font-weight: bold;
-	color: darkred;
+  	color: darkred;
+    font-weight: bold;
 } 
 
 .disabled {
-	color: gray;
+	  color: #606060;
 }

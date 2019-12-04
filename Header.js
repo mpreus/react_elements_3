@@ -8,9 +8,9 @@ const Header = (props) => {
 		<header> {/* 'items' to lista dań możliwych do zamówienia */}
 				{/* 'activeItems to lista aktywnych, 'klikniętych' dań */}
 			<h1>Twoje menu</h1>
-			<p>zamów klikając w wybraną pozycję</p>
+			<p>/zamów klikając w wybraną pozycję/</p>
 			<h4>Wielkość zamówienia (liczba wybranych pozycji): {number}</h4>
-			<h3>Do zapłaty: {number ? `${number * 10} złotych` : "0 złotych"} </h3>
+			<h4>Do zapłaty: {number ? `${number * 10} złotych` : "0 złotych"}</h4>
 		{/* jesli 'number' nie fałszywy (różny od zera) ... */}
 		</header>
 	)

@@ -10,7 +10,7 @@ const ListItems = (props) => {
 	
 	return (
 		<div className="list">
-			<h2>Twoje zamówienie:</h2>
+			<h3>Twoje zamówienie:</h3>
 			<ul>
 				{items} {/* to wstawiamy te nowo utworzone komponenty, które treść biorą z pliku 'Item.js' */}
 			</ul>
