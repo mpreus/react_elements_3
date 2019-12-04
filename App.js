@@ -15,15 +15,13 @@ class App extends React.Component {
 	}
 
 	handleChangeStatus = (id) => {
-		// console.log("Działa!"); /* żebu sprawdzić, czy kliknięcie działa (jeszcz przed zaimplementowaniem dalszej logiki) */
-		console.log(id);
-
+		
 		const items = this.state.items.map( item => {
 			if ( id === item.id) {
 				item.active = !item.active
-			} /* zmiana 'active' na 'nieaktive' i odwrotnie */
+			} 								/* zmiana 'active' na 'nie-aktive' i odwrotnie */
 			return item
-		})
+		});
 
 		this.setState({
 			items: items
@@ -34,8 +32,9 @@ class App extends React.Component {
 		return (
 			<React.Fragment>
 		{/* poniższe daje dostęp do całości 'items' w innych plikach (modułach) */}
-				<Header items={this.state.items}/>
+				<Header items={this.state.items} />
 				<ListItems items={this.state.items} changeStatus={this.handleChangeStatus} />
+				<Footer items={this.state.items} />
 			</React.Fragment>
 		);
 	}

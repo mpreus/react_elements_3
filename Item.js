@@ -5,5 +5,5 @@ const Item = (props) => (
 	>
 		{props.name}
 	</li>
-)
+);
 /* każdemy z 'li' przypisujemy klasę w zależności od tego czy jest 'active' czy nie */
